@@ -67,6 +67,16 @@
     text-transform: capitalize;
 
 }
+.sub-btn{
+    transition:  0.3 ease;
+    box-shadow: 0.3 ease;
+}
+.sub-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
 
 /* hero-section */
 .hero-section {
@@ -435,7 +445,49 @@ transition: 0.3;
     gap: 15px;
     
 }
-
+.footer-section{
+    background-image: url(assets/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 20px 40px 20px;
+    padding-top: 150px;
+    color: #FFFFFF;
+}
+.footer-logo{
+    font-size: 48px;
+    font-weight: bold; 
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+.gradient-taxt{
+    color: rgba(251, 9, 180, 1);
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.social-items{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color:#aaa;
+    font-size: 16px;
+    
+}
+.social-info{
+    height: 24px;
+    width: 24px;
+}
+.copyright-text{
+    color: #aaa;
+    font-size: 14px;
+}
 /* media  */
 @media screen and (max-width:576px)
  {
@@ -453,6 +505,11 @@ transition: 0.3;
     }
     .nav-links{
         display: none;
+    }
+    .sub-btn{
+        display: none;
+    }
+    
     }
     .nav-btn{
         width: auto;
@@ -494,9 +551,10 @@ transition: 0.3;
         height: auto;
     }
     .card-container{
-        flex-direction: column;
-        gap: 30px;
-        /* grid-template-columns: repeat(2,1fr); */
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2,1fr); 
+        justify-content: center;
     
     }
     .card-number{
@@ -555,6 +613,26 @@ transition: 0.3;
     .social-icons{
         justify-content: center;
     }
+ .footer-section{
+    padding: 50px 20px 30px 20px;
+ }   
+ .footer-logo{
+    font-size: 36px;
+    margin-bottom: 30px;
+ }
+ .footer-social{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
     
+    gap: 15px;
+    margin-bottom: 30px;
+ }
+ .social-info{
+    justify-content: center;
+    font-size: 16px;
+    padding: 5px 0;
+    border-radius: 10px;
+ }
     
 }

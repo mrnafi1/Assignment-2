@@ -447,6 +447,9 @@ transition: 0.3;
 }
 .footer-section{
     background-image: url(assets/footer-bg.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -457,6 +460,8 @@ transition: 0.3;
 }
 .footer-logo{
     font-size: 48px;
+    /* display: flex;
+    justify-content: center; */
     font-weight: bold; 
     margin-top: 40px;
     letter-spacing: 1px;
@@ -481,6 +486,7 @@ transition: 0.3;
     
 }
 .social-info{
+    display: inline-block;
     height: 24px;
     width: 24px;
 }
